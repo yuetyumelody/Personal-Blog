@@ -1,0 +1,45 @@
+{% load static %}
+<html>
+    <head>
+        <title>melosmurf</title>
+    </head>
+
+    <body>
+        <header>
+            <ul id="header">
+                <li><a href="{% url 'blog_home' %}">BLOG</a></li>
+                <li><a href="{% url 'recipe_list' %}">HOMEMADE</a></li>
+            </ul>
+        </header>
+
+        <div class="section" id="aboutme">
+            <h2>Food</h2>
+            <h2>Travel</h2>
+            <h2>Tech</h2>
+            <h2>Enthusiast</h2>
+
+            <h3><a href="{% url 'aboutme'%}">About Me</a></h3>
+        </div>
+
+        <div class="section" id="blog_preview">
+            <!--For lastest 3 blogs, preview here-->
+
+        </div>
+
+        <div class="section" id ="food_travel">
+
+            <h1>FOOD AND TRAVEL RECS</h1>
+
+        </div>
+
+        <div class="section" id="recipes_preview">
+            <!--display featured 3 recipes-->
+
+        </div>
+    </body>
+
+    <footer>
+        <h4>Created, designed and built by Melody Lam</h4>
+    </footer>
+
+</html>

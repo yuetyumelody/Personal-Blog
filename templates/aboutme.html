@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="section-row">
+        <div class="column" id="aboutme">
+
+            <p>Bred in Hong Kong, roamed in Europe, now in the New York City for college. </p>
+            <p>Always on the look for good books to read, fun projects to do,
+                places to venture and genuine people for great conversations. Loves cooking and feeding her friends, but not
+                eating her own food. </p>
+
+        </div>
+        <div class="column" id="photo">
+            <img src=" {% static 'banners/aboutmeportrait_cropped.jpg' %} ">
+        </div>
+    </div>
+{% endblock content %}

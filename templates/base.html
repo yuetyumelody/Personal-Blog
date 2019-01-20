@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+    <head>
+        <Title>melosmurf</Title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+
+    </head>
+
+    <body>
+    <ul id="header">
+        <li><a href="{% url 'blog_home' %}">BLOG</a></li>
+        <li><a href="{% url 'recipe_list' %}">HOMEMADE</a></li>
+    </ul>
+        <div>
+            {% block content %}
+            {% endblock content%}
+        </div>
+
+    </body>
+</html>

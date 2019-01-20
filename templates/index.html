@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{%load static %}
+
+{% block content %}
+    <div class = "section" id = "section-hero">
+        <img src=" {% static 'banners/sectionhero2.jpg' %} ">
+
+    </div>
+
+    <div class = "section-row">
+        <div class = "column" id = "aboutme">
+            <h2>About me</h2>
+            <p>Currently a college student at NYU, learning how to code and interested in languages</p>
+            <p>Born and raised in Hong Kong, lived two years in the Netherlands and now studying in New York City.
+                Looking for good books to read, fun places to venture and genuine people for great conversations.</p>
+            <p>Always searching for good food around the city, loves cooking but not eating what she cooks.</p>
+
+        </div>
+        <div class = "column" id = "contactme">
+            <h1>contact me!</h1>
+            <p> contact information</p>
+
+        </div>
+    </div>
+
+{% endblock content %}
