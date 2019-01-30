@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, TemplateView
-from .models import Post
+from .models import Post, RecipePost
 # Create your views here.
 
 
@@ -20,10 +20,10 @@ class BlogDetailView(DetailView):
     template_name = 'post_detail.html'
 
 class RecipeListView(ListView):
-    model = Post
+    model = RecipePost
     template_name = 'recipe_list.html'
     context_object_name = 'recipe_list'
 
 class RecipeDetailView(DetailView):
-    model = Post
+    model = RecipePost
     temaplate_name = 'recipe_detail.html'

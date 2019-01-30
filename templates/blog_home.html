@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <div class="jumbotron jumbotron-fluid">
+        <h1>sharing thoughts</h1>
+    </div>
+
 {% for post in blog_list %}
     <div class="post-entry">
         <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{post.body}}</p>
+        <p>{{ post.body }}</p>
     </div>
 {% endfor %}
 {% endblock content %}
