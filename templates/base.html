@@ -14,9 +14,11 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
 
-                <a href="{% url 'blog_home' %}">BLOG</a></li>
-                <a href="{% url 'home' %}">HOME</a>
-                <a href="{% url 'recipe_list' %}">HOMEMADE</a></li>
+                <a href="{% url 'blog_home' %}">HOME</a>
+                <a href="{% url 'home' %}">BLOG</a>
+                <a href="{% url 'recipe_list' %}">FOOD</a>
+                <a href="{% url 'travel' %}">TRAVEL</a>
+
             </div>
         </nav>
             {% block content %}

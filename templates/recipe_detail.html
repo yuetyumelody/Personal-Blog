@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <article class="recipe entry">
+        <h2>{{ post.title }}</h2>
+        <h4>{{ post.date_posted }}</h4>
+        <p> {{ post.body }}</p>
+    </article>
+
+{% endblock content %}

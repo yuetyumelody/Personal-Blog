@@ -27,3 +27,7 @@ class RecipeListView(ListView):
 class RecipeDetailView(DetailView):
     model = RecipePost
     temaplate_name = 'recipe_detail.html'
+
+class TravelListView(TemplateView):
+    template_name = 'travel.html'
+
